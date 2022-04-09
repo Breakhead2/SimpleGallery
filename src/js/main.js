@@ -12,7 +12,7 @@ for(let image of smallImages){
         event.target.classList.add('active');
         let path = event.target.getAttribute('src');
         let fileName = path.split('/')[3];
-        bigImage.src = '/src/images/big/' + fileName;
+        bigImage.src = 'src/images/big/' + fileName;
     });
 }
 
@@ -28,13 +28,13 @@ forwardBtn.addEventListener('click', () =>{
                 smallImages[0].classList.add('active');
                 let src = smallImages[0].getAttribute('src');
                 let fileName = src.split('/')[3];
-                bigImage.src = '/src/images/big/' + fileName;
+                bigImage.src = 'src/images/big/' + fileName;
                 break;
             }else{
                 smallImages[+index + 1].classList.add('active');
                 let src = smallImages[+index + 1].getAttribute('src');
                 let fileName = src.split('/')[3];
-                bigImage.src = '/src/images/big/' + fileName;
+                bigImage.src = 'src/images/big/' + fileName;
                 break;
             }
         }
@@ -49,13 +49,13 @@ backBtn.addEventListener('click', () =>{
                 smallImages[smallImages.length - 1].classList.add('active');
                 let src = smallImages[smallImages.length - 1].getAttribute('src');
                 let fileName = src.split('/')[3];
-                bigImage.src = '/src/images/big/' + fileName;
+                bigImage.src = 'src/images/big/' + fileName;
                 break;
             }else{
                 smallImages[+index - 1].classList.add('active');
                 let src = smallImages[index - 1].getAttribute('src');
                 let fileName = src.split('/')[3];
-                bigImage.src = '/src/images/big/' + fileName;
+                bigImage.src = 'src/images/big/' + fileName;
                 break;
             }
         }
