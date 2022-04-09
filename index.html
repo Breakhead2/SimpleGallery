@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Simple Gallery</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bigImage">
+        <img src="/src/images/big/img_1.png" alt="aminal" />
+        <div class="btn" id="back"><i class="fa-solid fa-backward"></i></div>
+        <div class="btn" id="forward"><i class="fa-solid fa-forward"></i></div>
+      </div>
+      <div class="smallImages">
+        <img
+          class="preview active"
+          src="/src/images/small/img_1.png"
+          alt="preview"
+        />
+        <img class="preview" src="/src/images/small/img_2.png" alt="preview" />
+        <img class="preview" src="/src/images/small/img_3.png" alt="preview" />
+        <img class="preview" src="/src/images/small/img_4.png" alt="preview" />
+        <img class="preview" src="/src/images/small/img_5.png" alt="preview" />
+        <img class="preview" src="/src/images/small/img_6.png" alt="preview" />
+      </div>
+    </div>
+
+    <!--include custom preview-->
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>

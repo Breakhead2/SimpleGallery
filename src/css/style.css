@@ -1,0 +1,72 @@
+body {
+    background-image: url('/src/images/background.png');
+    background-size:cover;
+
+}
+
+.wrapper {
+    padding: 25px 0;
+    max-width: 1325px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bigImage{
+    max-width: 800px;
+    min-height: 600px;
+    position: relative;
+}
+
+.bigImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.btn {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    padding: 12px;
+    background-color: gray;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+#back{
+
+    left: -25px;
+}
+
+#forward{
+    right: -25px;
+}
+
+.smallImages{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.preview{
+    border: 2px solid white;
+    box-sizing: border-box;
+    margin-right: 20px;
+    transition: all, 0.3s;
+}
+
+.preview.active{
+    border: 2px solid yellow;
+}
+
+.preview:hover{
+    transform: scale(1.1);
+}
+
+.preview:last-of-type{
+    margin-right: 0;
+}
